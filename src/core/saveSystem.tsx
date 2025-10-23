@@ -17,14 +17,6 @@ const saveSystem = {
       console.error('Failed to load data', e);
     }
   },
-
-  removeData: async (key: string) => {
-    try {
-      await AsyncStorage.removeItem(key);
-    } catch (e) {
-      console.error('Failed to remove data', e);
-    }
-  },
 };
 
 export default saveSystem;
